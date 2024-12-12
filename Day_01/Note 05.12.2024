@@ -1,0 +1,119 @@
+W3School
+Đầu ra HTML, CSS: 
++ Porfolio: cá nhân
++ Group.
+
+Client -> server: giao thức HTTP/ HTTPS
+CI/CD
+
+Frontend:
++ HTML: khung xương
++ CSS: da thịt
++ VueJS(JS)
+
+Backend:
++ NodeJS(JS)
++ Net
++ Java
+------------------------------------------ GITHUB ------------------------------------------
+Mở terminal:
+git init
+git status: màu đỏ, chưa ...
+git add . : đưa các file đang làm việc ở working space
+------------------------------------------ HTML ------------------------------------------
+Tạo file HTML --> html:5 -> tab
+
+<!DOCTYPE html>
+<html lang="en"> //Mở thẻ
+<head> //Mở thẻ head
+     <meta charset="UTF-8"> //Thẻ meta: định nghĩa thẻ (Vd: UTF-8: unicode ...)
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>FIRST LESSON</title> //Đổi tên tab
+</head> //Đóng thẻ head
+<body>
+     hello world //Code trong phần body
+</body>
+</html> //Đóng thẻ
+
+Một số thẻ cơ bản:
+BLOCK: (viết xong sẽ xuống dòng mới)
+- Heading: 
+     <h1>, <h2>, ... <h6>
+     </h1>, ...
+Dùng để định nghĩa tiêu đề (title): đậm hơn
+- Paragraph:
+     <p> .... </p>
+- List:
+     <ul>: dấu chấm đầu dòng
+          <li>: nội dung trong dấu chấm đầu dòng
+     <ol>: 1,2,3, ...
+- Chèn ảnh:
+     <img>
+- Xuống dòng: (thẻ không cần đóng)
+     <br>
+- Chia phần trang web: 
+     <section>
+- Khối:
+     <div>: đóng khối phần nào đó trên trang web
+- Dẫn link;
+     <a href="...">   </a>: dẫn link tới url
+     + ...: đường dẫn link
+     +    : tên đường dẫn
+- Gạch ngang dài:
+     <hr>: gạch ngang dài giữa trang
+
+INLINE: (kết thúc thẻ vẫn nằm trên cùng 1 dòng)
+     + <b> </b>: in đậm
+     + <i> </i>: in nghiêng
+     + <u> </u>: underline
+     + <span> </span>: text
+VD: 
+<h1> Buổi 1 </h1>
+<p> Hôm nay học </p>
+<ul> 
+     <li> HTML </li>
+     <li> CSS </li>
+</ul>
+
+BỐ CỤC MỘT TRANG WEB: (mind map bố cục cần gì, chia làm mấy phần)
+vd: CV: Họ tên; Projects; Demo, Hobby
+<main>
+     <section>
+          <div> <img>    </div>
+          <div> <h1>     </div>
+               <p> hello </p>
+     </section>
+</main>
+
+--------------------------------------------- CSS ----------------------------------------------
+CSS viết trong thẻ <style> </style>: giữa </head> và <body>
+Có 2 cách:
++ Viết trên 1 file khác và đặt tên: Vd: style.CSS
++ Code trong 1 file: </head> và <body>
++ Viết thẳng trong thẻ: <h1 style ....> (không nên dùng)
+
+
+
+<style>
+     Tên thẻ {
+          thuộc tính:
+               color: <màu chữ>;
+               background-color: <màu nền>;
+               width: <chiều rộng>;
+               height: <chiều cao>;
+     }
+     img{
+          width: ;
+          height: ;
+          (Nếu chỉ set 1 thuộc tính --> tự động điều chỉnh cho 3:4)
+     }
+     body{
+          width: 60%; (tính từ trái sang phải)
+          margin: auto; 
+          // margin: đi ra ngoài; auto: tự động căn giữa
+          padding
+          // padding: khoảng cách so với viền;
+          border: (có thể nhiều thuộc tính)
+          //
+     }
+</style>
