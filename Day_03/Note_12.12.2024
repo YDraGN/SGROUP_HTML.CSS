@@ -1,0 +1,32 @@
+- Liên kết với file CSS:
+     <link rel="stylesheet" href="./index.css">
+- Dùng gg fonts:
+     Chọn font -> embedded code -> import -> copy link -> bỏ vào file CSS
+-------- THÊM ICON ----------
+- Dungf font awesome cdn
+     Vào trang cdnjs -> copy tag -> bỏ trên link của css
+- Lên font awesome:
+     Tìm icon cần -> copy html để Dùng
+------------------------------
+display: flex
+     Các thẻ con liền kề: theo mặc định sẽ bị ép lại cho chiều dài bằng nội dung và lên trên cùng 1 hàng
+flex-direction: row/ column
+     Hướng để ép: theo hàng/ theo cột.
+     row-reverse: đảo ngược hàng lại (hiển thị div: từ phải -> trái)
+     column-reverse: đảo ngược cột (từ dưới -> trên)
+
+The main axis: Trục ngang ban đầu:
+     --------------------->
+Nếu flex-direction: column thì trục ngang và trục dọc sẽ bị quay -90 độ.
+     |
+     |
+     |
+     |
+     |
+     |
+     V
+
+The cross axis: Trục dọc
+-------------------------------------------
+span hàng loạt: bôi đen --> ctrl+shift+p --> wrap --> gõ span
+
