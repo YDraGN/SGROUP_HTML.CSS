@@ -1,0 +1,99 @@
+Phím tắt cơ bản:
+! + tab: để tạo cấu trúc html cơ bản
+Alt + shift: tạo ra hàng mới giống hàng hiện tại (copy)
+Type ul>li*7 : tạo ul với 7 thẻ li con
+Alt + click nhiều chỗ: sửa ở nhiều nơi (tạo nhiều con trỏ chuột)
+------------------------------------------------------------------
+Extension Làm việc với HTML:
+Auto close Tag 
+Auto rename
+Live server
+----------------------------CSS-----------------------------------
+3 cách nhúng CSS:
+- Inline: nhúng trong thẻ
+VD: 
+     <h1 style = "color: ...; font-size: ...;
+- Internal:
+Đặt tên lớp cho 1 phần tử;
+1. class: cần selector .<tên class>
+VD: .th7
+2. id: #<tên id>
+VD: #th7
+3. trong class có nhiều tên: ưu tiên nhận cái viết sau
+VD: <h1 class="thu7 thu3"></h1>
+--> nhận CSS của .thu3
+- External:
+     Tạo file mới .css
+     Thẻ linkL <link ref="stylesheet" href="./<tên file>">
+
+Độ ưu tiên: cái nào sau ưu tiên trước
+Vd: 
+trong body: internal -> External
+có Inline
+nhận inline -> External -> Internal
+
+trong body: External -> Internal
+Inline
+nhận inline -> Internal -> External
+
+---------------------------CSS selector--------------------------
+<tên thẻ>.<tên class> {}
+Vd: h1.heading {}
+
+.<tên class1>.<tên class2> {}: thẻ có 2 class là class1 và class2
+.<tên class1> .<tên class2> {}: thẻ có class2 nằm trong class1
+* {}: lấy tất cả các thẻ
+<tên thẻ> {}: elements
+<tên thẻ>.<tên class> {}: lấy thẻ cụ thể có class
+[đối tượng1], [đối tượng2]: lấy nhiều đối tượng1
+div p: lấy thẻ p nằm trong thẻ div
+
+Mức độ ưu tiên:
+Inline -> id -> class -> Thẻ
+viết sau -> viết trước
+Điểm ưu tiên:
+     inline: 1000;
+     id: 100;
+     class: 10;
+     tag: 1;
+
+----------------------------HTML TAG-------------------------------
+<span></span>: viết trên cùng 1 hàng
+Thay đổi hiển thị của span: vào CSS
+     span {
+          display: ...;
+          width: ...;
+     }
+
+----------------------------BOX MODEL--------------------------------
+padding:
+- Viết tắt: 
+     top right bottom left
+          9px 2px 9px 8px
+     top/bottom right/left
+          9px 2px 
+     top right/left bottom
+          9px 2px 9px
+border:
+     width;
+     style: solid;
+     color
+     margin: khoảng cách giữa các đối tượng/ block
+
+*MARGIN:
+==> khoảng cách giữa 2 block: lấy lớn nhất trong trên dưới, trái phải thì cộng dồn
+Vd: 
+     block1: 30 20 10 40
+     block2: 20 40 50 50
+-> khoảng cách trên dưới: 50
+-> khoảng cách trái phải: 70
+
+------------------------------ĐƠN VỊ ĐO--------------------------------
+px : điểm ảnh --> lấy giá trị cứng
+%  : lấy % của thẻ cha
+rem: root + em (font-size của thẻ html làm chuẩn)
+     1rem = 1(font-size của html)
+em : giá trị phông chữ mặc định của thằng cha để làm chuẩn (bthw: 16px);
+     1em = 1(font-size của thẻ cha)
+
+Vd:
