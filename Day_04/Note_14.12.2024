@@ -1,0 +1,38 @@
+Grid layout -> thường ít dùng
+--------------------------------------------------------------
+Chia bố cục trang web (framework)
+- Chia thành các file
+header.html (.vue)
+sidebar.html
+<body>
+
+</body>
+----------------------------- POSITION -----------------------------
+
+- static: vị trí mặc định của nó
+VD: <h1>Hello</h1> --> mặc định position là static
+- relative: vị trí tương đối so với bên ngoài 
+- absolute: elements của mình hiển thị lên trên thẻ cha đang chứa hắn
+- fixed: cố định so với màn hình mình coi.
+- sticky: chạy xong rồi fixed
+
+!BẮT BUỘC PHẢI CÓ ÍT NHẤT 1 TRONG 4 THUỘC TÍNH: left, right, top, bottom
+position: relative --> chưa có ý nghĩa, cần setting thuộc tính (4 phía)
+left: 50px; --> vị trí tương đối so với thẻ body là 50px
+left/ right: chỉ ăn 1 trong 2, thường lấy cái viết trước
+top/ bottom:
+
+----------------------------- PSEUDO-----------------------------
+[tên thẻ] style ::before/ ::after
+VD:
+p::before{
+     content: ....
+}
+- before: đầu thẻ
+- after: cuối thẻ
+- howver: đưa chuột vào thẻ
+- active:
+- visted:  
+visited
+{color: red} --> nếu link đã được truy cập thì đổi thành màu đỏ
+- nth-of-
