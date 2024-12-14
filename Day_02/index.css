@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+body{
+     display: block;
+     font-family: "Open Sans", Arial;
+     color: #454545;
+     font-size: 16px;
+     margin: 2em auto;
+     padding: 1em;
+     line-height: 1.4;
+     hyphens: auto;
+}
+p{
+     display:block;
+     margin-block-start: 1em;
+     margin-block-end: 1em;
+}
+img{
+     max-width: 200px;
+     overflow-clip-margin: content-box;
+     overflow: clip;
+}
+figcaption{
+     font-size: .7em;
+     display: block;
+     unicode-bidi: isolate;
+}
+
+.position{
+     display: block;
+     unicode-bidi: isolate;
+}
+.picture-left{
+     float: none;
+     width: inherit;
+     overflow: hidden;
+     margin-right: 1em;
+}
+.text-left{
+     float: none;
+     width: inherit;
+}
+.fr{
+     margin-top: -1em;
+}
+.small-text{
+     font-size: .5em;
+}
+.not-allowed{
+     cursor: not-allowed;
+}
+.WTFPL{
+     font-family: monospace;
+     font-size: .9em;
+}
+.four-before{
+     content: "";
+     display: inline-block;
+     width: 1em;
+     height: 1em;
+     margin-left: .2em;
+     margin-right: .2em;
+     background-color: #444;
+}
+.four{
+     color: #444;
+     font-weight: 700;
+}
+.four-five-before{
+     content: "";
+     display: inline-block;
+     width: 1em;
+     height: 1em;
+     margin-left: .2em;
+     margin-right: .2em;
+     background-color: #454545;
+}
+.four-five{
+     color: #454545;
+     font-weight: 700;
+}
