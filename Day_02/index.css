@@ -30,14 +30,13 @@ figcaption{
      display: flex;
      justify-content: center;
 }
-.position{
-     display: block;
-     unicode-bidi: isolate;
+.display-flex{
+     display: flex;
+     flex-direction: row;
 }
 .picture-left{
      float: none;
      width: inherit;
-     overflow: hidden;
      margin-right: 1em;
 }
 .text-left{
@@ -129,4 +128,24 @@ blockquote span{
      60% { color: green; }
      80% { color: blue; }
      100% { color: purple; }
+}
+#contrast{
+     color: #000;
+     top: 10px;
+}
+#invmode{
+     color: #fff;
+     background-color: #000;
+     top: 34px;
+     text-decoration: underline;
+}
+button.cont{
+     cursor: pointer;
+     border-radius: 2px;
+     position: fixed;
+     font-size: .8em;
+     border: 0;
+     padding: 2px 5px;
+     text-decoration: underline;
+     right: 10px;
 }
