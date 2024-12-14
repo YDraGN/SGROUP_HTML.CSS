@@ -5,6 +5,7 @@ body{
      font-family: "Open Sans", Arial;
      color: #454545;
      font-size: 16px;
+     max-width: 50%;
      margin: 2em auto;
      padding: 1em;
      line-height: 1.4;
@@ -25,7 +26,10 @@ figcaption{
      display: block;
      unicode-bidi: isolate;
 }
-
+.kopimi{
+     display: flex;
+     justify-content: center;
+}
 .position{
      display: block;
      unicode-bidi: isolate;
