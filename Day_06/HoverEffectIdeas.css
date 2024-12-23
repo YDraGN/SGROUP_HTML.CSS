@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+body{
+     background-color: rgb(41, 40, 40);
+     color: #fff;
+     font-family: 'Raleway', Arial, sans-serif; 
+     font-weight: 400;
+     font-size: 1em;
+}
+div{
+     display: block;
+}
+/* img{
+     overflow: hidden;
+     justify-content: center;
+     margin-right: 10px;
+} */
+.display-flex{
+     display: flex;
+}
+.justify-content-space-between{
+     justify-content: space-between;
+}
+.justify-content-space-around{
+     justify-content: space-around;
+}
+.cordrops-top{
+     width: 100%;
+     text-transform: uppercase;
+     margin-bottom: 60px;
+     line-height: 2.2;
+     font-weight: 800;
+     font-size: 0.8em;
+     color: rgb(92, 150, 236);
+     letter-spacing: 1px;
+}
+.cordrops-header{
+     width: 50%;
+     letter-spacing: 1px;
+     display: flex;
+     flex-flow: column wrap;
+     align-content: center;
+     align-items: center;
+}
+.set{
+     flex-flow: row wrap;
+     justify-content: space-around;
+     margin-top: 60px;
+     margin-bottom: 60px;
+}
+.set-button{
+     border: solid hidden;
+     font-weight: 800;
+     margin-right: 20px; 
+     padding: 15px 25px;
+     color: lightskyblue;
+     cursor: pointer;
+     text-decoration: none;
+}
+.set-button:hover{
+     color: #ffff;
+     background-color: #484B54;
+}
+.set-button:first-child{
+     color: #ffff;
+     background-color: #484B54;
+}
+.hover-effect-ideas{
+     font-weight: 800;
+     font-size: 60px;
+     margin-bottom: 5px;
+}
+.content{
+     max-width: 1000px;
+     margin: 0 auto;
+}
+.content h2{
+     margin: 0;
+     padding: 4em 1% 0;
+     font-size: 1.5em;
+     font-weight: 800;
+     color: #484B54;
+}
+.content h2:first-child{
+     padding-top: 0em;
+}
+.grid{
+     position: relative;
+     margin: 0 auto;
+     padding: 1em 0 4em;
+     max-width: 1000px;
+     text-align: center;
+}
+.grid figure{
+     position: relative;
+     float: left;
+     overflow: hidden;
+     margin: 10px 1%;
+     min-width: 320px;
+     max-width: 480px;
+     max-height: 360px;
+     width: 48%;
+     background-color: #3085a3;
+     text-align: center;
+     cursor: pointer;
+}
+.grid figure img{
+     position: relative;
+     display: block;
+}
+figure.effect-lily img{
+     width: calc(100% + 50px);
+     margin: 0;
+     opacity: 0.7;
+     transition: opacity 0.35s, transform 0.35s;
+}
+.grid figure figcaption{
+     display: block;
+     position: absolute;
+     top: 0;
+     left: 0;
+     width: 400px;
+     height: 280px;
+     padding: 2em;
+     color: #ffff;
+     text-transform: uppercase;
+     font-size: 1.25em;
+}
+.grid figure h2{
+     display: block;
+     padding: 0;
+     color: #ffff;
+     font-size: 1.5em;
+     word-spacing: -0.15em;
+     font-weight: 300;
+}
+.grid figure h2 span{
+     font-weight: 800;
+}
+.grid figure p{
+     display: block;
+     margin: 0;
+     font-size: 68.5%;
+     letter-spacing: 1px;
+     opacity: 0;
+}
+figure.effect-lily p{
+     color: rgba(255, 255, 255, 0.8);
+     transition: opacity 0.2s;
+}
+figure.effect-lily figcaption{
+     text-align: left;
+}
+figure.effect-lily figcaption div{
+     display: flex;
+     position: absolute;
+     bottom: 0;
+     left: 0;
+     padding: 2em;
+     width: 400px;
+     height: 140px;
+     flex-direction: column;
+     justify-content: end;
+     transition: transform 0.35s;
+}
+figure.effect-lily:hover > img{
+     opacity: 1.0;
+     transform: translate(-40px, 0);
+}
+figure.effect-lily:hover > figcaption > div{
+     transform: translate(0, -40px);
+}
+figure.effect-lily:hover > figcaption > div > p{
+     opacity: 1.0;
+}
